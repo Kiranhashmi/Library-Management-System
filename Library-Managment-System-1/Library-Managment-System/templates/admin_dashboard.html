@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="fixed inset-0 bg-cover bg-center bg-no-repeat"
+     style="background-image: url('{{ url_for('static', filename='images/pic4.jpg') }}'); z-index: -1;">
+</div>
+<br><br><br>
+<h2 class="text-3xl font-semibold text-white text-center tracking-tight">Admin Dashboard</h2> <br><br><br>
+<div class="space-y-4">
+    <a href="{{ url_for('create_admin') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">Create Admin</a> <br><br>
+    <a href="{{ url_for('add_book') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">Add Book</a> <br><br>
+    <a href="{{ url_for('view_books') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">View Books</a> <br><br>
+    <a href="{{ url_for('issue_book') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">Issue Book</a> <br><br>
+    <a href="{{ url_for('view_issued_books') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">View Issued Books</a> <br><br>
+    <a href="{{ url_for('view_students') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">View Students</a><br><br>
+    <a href="{{ url_for('search_books') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">Search Books</a><br><br>
+    <a href="{{ url_for('logout') }}" class="block-center bg-black-300 font-semibold text-white text-xl px-12 py-6 rounded">Logout</a> <br><br>
+</div>
+<br><br>
+ <footer class="text-center text-white-sm mt-12 mb-6">
+        <p class="drop-shadow-md">Powered by <span class="font-white font-semibold">Code_of_Duty</span></p>
+    </footer>
+{% endblock %}
