@@ -61,3 +61,37 @@ The application incorporates the following security measures to protect against 
 - Frontend: HTML, Tailwind CSS (via CDN for styling)
 - Security: Flask-WTF (CSRF protection), Werkzeug (password hashing)
 - Python Version: Compatible with Python 3.13
+
+## Installation Guide
+Follow these steps to set up and run the Library Management System locally:
+
+1. **Clone the Repository**:
+```bash
+git clone https://github.com/your-username/Library-Management-System.git
+cd Library-Management-System
+```
+2. **Create Virtual Environment**:
+```
+python -m venv venv
+```
+# Linux/macOS:
+```
+source venv/bin/activate
+```
+# Windows:
+```
+venv\Scripts\activate
+```
+3. **Install Dependencies:**
+```
+pip install -r requirements.txt
+```
+4. **Run the Application:**
+```
+python library_management.py
+```
+5. **Access the Application:**
+
+- Open http://localhost:5000 in your browser
+- Admin Login: username: shaheer, password: 231330@shaheer
+- Student: Register at /student_register, then login at /student_login
