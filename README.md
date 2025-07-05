@@ -28,7 +28,7 @@ The application incorporates the following security measures to protect against 
 Secure Error Handling:
 
 Custom error pages for 404 (Page Not Found) and 500 (Internal Server Error) prevent leakage of sensitive information like stack traces.
-Generic error messages are used in production to avoid exposing system details.
+Generic error messages are used to avoid exposing system details.
 
 
 Secure Input Handling:
@@ -46,7 +46,7 @@ Example: cursor.execute('SELECT * FROM students WHERE username = ?', (username,)
 Session Management:
 
 Secure session cookies are configured with HttpOnly and SameSite=Strict attributes to prevent JavaScript access and cross-site request issues.
-Sessions are set to expire after 30 minutes of inactivity (PERMANENT_SESSION_LIFETIME).
+Sessions expire after 30 minutes of inactivity (PERMANENT_SESSION_LIFETIME).
 In production, SESSION_COOKIE_SECURE should be enabled for HTTPS-only cookies.
 
 
